@@ -16,7 +16,7 @@ namespace MPUGyro
         DataGridView Grid { get; set; }
         event EventHandler ClickChoose;
     }
-
+     
     public partial class Form1 : Form, IMpuGyro
     {
         public DataGridView Grid
