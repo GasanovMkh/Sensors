@@ -33,7 +33,7 @@ namespace MPUGyro
             {
                 ds.Tables[0].Columns.Add(arraNameColumn[i]);
             }
-
+            
             /*заполняем строки в таблице*/
             string Line = sr.ReadLine();
             while (Line != null)

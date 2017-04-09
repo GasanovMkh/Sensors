@@ -37,7 +37,7 @@ namespace MPUGyro
             InitializeComponent();
             btn_choose.Click += Click_Choose;
         }
-
+         
         public void Click_Choose(Object sender, EventArgs e)
         {
             ClickChoose?.Invoke(this, EventArgs.Empty);
