@@ -13,7 +13,7 @@ namespace MPUGyro
         /// </summary>
         [STAThread]
         static void Main()
-        { 
+        {  
               
             Form1 form = new Form1();
             DataTable dt = new DataTable(form);
