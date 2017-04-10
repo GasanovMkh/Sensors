@@ -23,6 +23,7 @@ namespace MPUGyro
             FileStream fs = new FileStream("ortog.txt", FileMode.Open, FileAccess.Read);
             if (fs != null)
             {
+
                 StreamReader sr = new StreamReader(fs);
 
                 string b = sr.ReadLine();
