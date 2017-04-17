@@ -20,7 +20,7 @@ namespace MPUGyro
         public void _view_ReadTxt(Object sender, EventArgs e)
         {
             int[] arr;
-            FileStream fs = new FileStream("ortog.txt", FileMode.Open, FileAccess.Read);
+            FileStream fs = new FileStream(@"Files/ortog.txt", FileMode.Open, FileAccess.Read);
             if (fs != null)
             {
 

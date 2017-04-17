@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea25 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend25 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea26 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend26 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea27 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend27 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea28 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend28 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea29 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend29 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series29 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea30 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend30 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series30 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ch_b_nx1 = new System.Windows.Forms.CheckBox();
@@ -128,6 +128,7 @@
             this.ch_b_ny1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ch_b_ny1.AutoCheck = false;
             this.ch_b_ny1.AutoSize = true;
             this.ch_b_ny1.Location = new System.Drawing.Point(173, 345);
             this.ch_b_ny1.Name = "ch_b_ny1";
@@ -141,6 +142,7 @@
             this.ch_b_nz1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ch_b_nz1.AutoCheck = false;
             this.ch_b_nz1.AutoSize = true;
             this.ch_b_nz1.Location = new System.Drawing.Point(173, 368);
             this.ch_b_nz1.Name = "ch_b_nz1";
@@ -167,6 +169,7 @@
             this.ch_b_ny2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ch_b_ny2.AutoCheck = false;
             this.ch_b_ny2.AutoSize = true;
             this.ch_b_ny2.Location = new System.Drawing.Point(173, 466);
             this.ch_b_ny2.Name = "ch_b_ny2";
@@ -180,6 +183,7 @@
             this.ch_b_nz2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ch_b_nz2.AutoCheck = false;
             this.ch_b_nz2.AutoSize = true;
             this.ch_b_nz2.Location = new System.Drawing.Point(173, 489);
             this.ch_b_nz2.Name = "ch_b_nz2";
@@ -206,6 +210,7 @@
             this.ch_b_ny3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ch_b_ny3.AutoCheck = false;
             this.ch_b_ny3.AutoSize = true;
             this.ch_b_ny3.Location = new System.Drawing.Point(173, 589);
             this.ch_b_ny3.Name = "ch_b_ny3";
@@ -219,6 +224,7 @@
             this.ch_b_nz3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ch_b_nz3.AutoCheck = false;
             this.ch_b_nz3.AutoSize = true;
             this.ch_b_nz3.Location = new System.Drawing.Point(173, 612);
             this.ch_b_nz3.Name = "ch_b_nz3";
@@ -314,42 +320,42 @@
             this.chart0_kren.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea7.Name = "ChartArea1";
-            this.chart0_kren.ChartAreas.Add(chartArea7);
-            legend7.Name = "γ0(t)";
-            this.chart0_kren.Legends.Add(legend7);
+            chartArea25.Name = "ChartArea1";
+            this.chart0_kren.ChartAreas.Add(chartArea25);
+            legend25.Name = "γ0(t)";
+            this.chart0_kren.Legends.Add(legend25);
             this.chart0_kren.Location = new System.Drawing.Point(514, 9);
             this.chart0_kren.Name = "chart0_kren";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series7.Legend = "γ0(t)";
-            series7.LegendText = "γ0(t)";
-            series7.Name = "γ0(t)";
-            this.chart0_kren.Series.Add(series7);
+            series25.ChartArea = "ChartArea1";
+            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series25.Legend = "γ0(t)";
+            series25.LegendText = "γ0(t)";
+            series25.Name = "γ0(t)";
+            this.chart0_kren.Series.Add(series25);
             this.chart0_kren.Size = new System.Drawing.Size(465, 136);
             this.chart0_kren.TabIndex = 33;
             this.chart0_kren.Text = "chart1";
-            title2.Name = "Title1";
-            title2.Text = "График зависимости дискретного значения угла крена от времени";
-            this.chart0_kren.Titles.Add(title2);
+            title5.Name = "Title1";
+            title5.Text = "График зависимости дискретного значения угла крена от времени";
+            this.chart0_kren.Titles.Add(title5);
             // 
             // chart0_kurs
             // 
             this.chart0_kurs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea8.Name = "ChartArea1";
-            this.chart0_kurs.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart0_kurs.Legends.Add(legend8);
+            chartArea26.Name = "ChartArea1";
+            this.chart0_kurs.ChartAreas.Add(chartArea26);
+            legend26.Name = "Legend1";
+            this.chart0_kurs.Legends.Add(legend26);
             this.chart0_kurs.Location = new System.Drawing.Point(28, 157);
             this.chart0_kurs.Name = "chart0_kurs";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series8.Legend = "Legend1";
-            series8.LegendText = "Ψ0(t)";
-            series8.Name = "Ψ0(t)";
-            this.chart0_kurs.Series.Add(series8);
+            series26.ChartArea = "ChartArea1";
+            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series26.Legend = "Legend1";
+            series26.LegendText = "Ψ0(t)";
+            series26.Name = "Ψ0(t)";
+            this.chart0_kurs.Series.Add(series26);
             this.chart0_kurs.Size = new System.Drawing.Size(465, 136);
             this.chart0_kurs.TabIndex = 34;
             this.chart0_kurs.Text = "chart2";
@@ -359,18 +365,18 @@
             this.chart0_tangazh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea9.Name = "ChartArea1";
-            this.chart0_tangazh.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chart0_tangazh.Legends.Add(legend9);
+            chartArea27.Name = "ChartArea1";
+            this.chart0_tangazh.ChartAreas.Add(chartArea27);
+            legend27.Name = "Legend1";
+            this.chart0_tangazh.Legends.Add(legend27);
             this.chart0_tangazh.Location = new System.Drawing.Point(514, 157);
             this.chart0_tangazh.Name = "chart0_tangazh";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series9.Legend = "Legend1";
-            series9.LegendText = "θ0(t)";
-            series9.Name = "θ0(t)";
-            this.chart0_tangazh.Series.Add(series9);
+            series27.ChartArea = "ChartArea1";
+            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series27.Legend = "Legend1";
+            series27.LegendText = "θ0(t)";
+            series27.Name = "θ0(t)";
+            this.chart0_tangazh.Series.Add(series27);
             this.chart0_tangazh.Size = new System.Drawing.Size(465, 136);
             this.chart0_tangazh.TabIndex = 35;
             this.chart0_tangazh.Text = "chart3";
@@ -380,18 +386,18 @@
             this.chart_kreni.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea10.Name = "ChartArea1";
-            this.chart_kreni.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chart_kreni.Legends.Add(legend10);
+            chartArea28.Name = "ChartArea1";
+            this.chart_kreni.ChartAreas.Add(chartArea28);
+            legend28.Name = "Legend1";
+            this.chart_kreni.Legends.Add(legend28);
             this.chart_kreni.Location = new System.Drawing.Point(226, 443);
             this.chart_kreni.Name = "chart_kreni";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series10.Legend = "Legend1";
-            series10.LegendText = "γ0(t)";
-            series10.Name = "Nxi(t)";
-            this.chart_kreni.Series.Add(series10);
+            series28.ChartArea = "ChartArea1";
+            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series28.Legend = "Legend1";
+            series28.LegendText = "γ0(t)";
+            series28.Name = "Nxi(t)";
+            this.chart_kreni.Series.Add(series28);
             this.chart_kreni.Size = new System.Drawing.Size(369, 136);
             this.chart_kreni.TabIndex = 36;
             this.chart_kreni.Text = "chart1";
@@ -401,18 +407,18 @@
             this.chart_kursi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea11.Name = "ChartArea1";
-            this.chart_kursi.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.chart_kursi.Legends.Add(legend11);
+            chartArea29.Name = "ChartArea1";
+            this.chart_kursi.ChartAreas.Add(chartArea29);
+            legend29.Name = "Legend1";
+            this.chart_kursi.Legends.Add(legend29);
             this.chart_kursi.Location = new System.Drawing.Point(610, 447);
             this.chart_kursi.Name = "chart_kursi";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series11.Legend = "Legend1";
-            series11.LegendText = "Ψ0(t)";
-            series11.Name = "Ni(t)";
-            this.chart_kursi.Series.Add(series11);
+            series29.ChartArea = "ChartArea1";
+            series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series29.Legend = "Legend1";
+            series29.LegendText = "Ψ0(t)";
+            series29.Name = "Ni(t)";
+            this.chart_kursi.Series.Add(series29);
             this.chart_kursi.Size = new System.Drawing.Size(369, 136);
             this.chart_kursi.TabIndex = 37;
             this.chart_kursi.Text = "chart2";
@@ -422,18 +428,18 @@
             this.chart_tangazhi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea12.Name = "ChartArea1";
-            this.chart_tangazhi.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chart_tangazhi.Legends.Add(legend12);
+            chartArea30.Name = "ChartArea1";
+            this.chart_tangazhi.ChartAreas.Add(chartArea30);
+            legend30.Name = "Legend1";
+            this.chart_tangazhi.Legends.Add(legend30);
             this.chart_tangazhi.Location = new System.Drawing.Point(226, 583);
             this.chart_tangazhi.Name = "chart_tangazhi";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series12.Legend = "Legend1";
-            series12.LegendText = "θ0(t)";
-            series12.Name = "Nzi(t)";
-            this.chart_tangazhi.Series.Add(series12);
+            series30.ChartArea = "ChartArea1";
+            series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series30.Legend = "Legend1";
+            series30.LegendText = "θ0(t)";
+            series30.Name = "Nzi(t)";
+            this.chart_tangazhi.Series.Add(series30);
             this.chart_tangazhi.Size = new System.Drawing.Size(369, 136);
             this.chart_tangazhi.TabIndex = 38;
             this.chart_tangazhi.Text = "chart1";
@@ -495,7 +501,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox ch_b_nx1;
-        private System.Windows.Forms.CheckBox ch_b_ny1;
         private System.Windows.Forms.CheckBox ch_b_nz1;
         private System.Windows.Forms.CheckBox ch_b_nx2;
         private System.Windows.Forms.CheckBox ch_b_ny2;
@@ -512,6 +517,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_kreni;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_kursi;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_tangazhi;
+        private System.Windows.Forms.CheckBox ch_b_ny1;
     }
 }
 

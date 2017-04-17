@@ -115,6 +115,15 @@
   <ItemGroup>
     <None Include="Files\Ort.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nx1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\ny1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files\nz1.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
