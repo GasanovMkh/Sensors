@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace MPUGyro
 {
@@ -24,6 +25,8 @@ namespace MPUGyro
         CheckBox ChBNx3 { get; set; }
         CheckBox ChBNy3 { get; set; }
         CheckBox ChBNz3 { get; set; }
+        Chart Chart0_Kren { get; set; }
+        Button Btn_Kr0 { get; set; }
         event EventHandler ClickChoose;
         event EventHandler ClickChBNx1;
         event EventHandler ClickChBNy1;
@@ -34,6 +37,8 @@ namespace MPUGyro
         event EventHandler ClickChBNx3;
         event EventHandler ClickChBNy3;
         event EventHandler ClickChBNz3;
+        event EventHandler ClickBtnKr0;
+        // event EventHandler ClickChart0_KrenX;
     }
 
     public partial class Form1 : Form, IMpuGyro
@@ -94,6 +99,16 @@ namespace MPUGyro
             get { return ch_b_nz3; }
             set { ch_b_nz3 = value; }
         }
+        public Chart Chart0_Kren
+        {
+            get { return chart0_kren; }
+            set { chart0_kren = value; }
+        }
+        public Button Btn_Kr0
+        {
+            get { return btn_kr0; }
+            set { btn_kr0 = value; }
+        }
         #endregion
 
         public Form1()
@@ -110,6 +125,7 @@ namespace MPUGyro
             ch_b_nx3.Click += Click_ch_bnx3;
             ch_b_ny3.Click += Click_ch_bny3;
             ch_b_nz3.Click += Click_ch_bnz3;
+            btn_kr0.Click += Click_btn_kr0;
             #endregion
         }
         #region Проброс событий
@@ -153,6 +169,10 @@ namespace MPUGyro
         {
             ClickChBNz3?.Invoke(this, EventArgs.Empty);
         }
+        public void Click_btn_kr0(Object sender, EventArgs e)
+         {
+            ClickBtnKr0?.Invoke(this, EventArgs.Empty);
+         }
         #endregion
 
         #region Реализация интерфейса ITestForm
@@ -166,6 +186,7 @@ namespace MPUGyro
         public event EventHandler ClickChBNx3;
         public event EventHandler ClickChBNy3;
         public event EventHandler ClickChBNz3;
+        public event EventHandler ClickBtnKr0;
         #endregion
     }
 }

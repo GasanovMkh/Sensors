@@ -9,13 +9,16 @@ namespace MPUGyro
     class DataTable
     {
         private readonly IMpuGyro _view;
-        //public bool Checked { get; set; }
-
+        
+        ReadingFromTxt rft = new ReadingFromTxt();
+        ShowNewForm snf = new ShowNewForm();
+     
         public DataTable(IMpuGyro view)
         {
             _view = view;
             _view.ClickChoose += _view_ClickChoose;
             _view.ClickChBNx1 += _view_ClickChBNx1;
+            _view.ClickBtnKr0 += _view_ClickBtnKr0;
         }
 
         public void _view_ClickChoose(Object sender, EventArgs e)
@@ -59,6 +62,15 @@ namespace MPUGyro
             _view.Grid.Columns[7].Width = 50;
             _view.Grid.Columns[8].Width = 50;
             _view.Grid.Columns[9].Width = 50;
+
+            var krenModel = rft._view_ReadTxt();
+            var graphics = new Graphics(_view);
+            graphics.DrowGraphics(krenModel);            
+        }
+        public void _view_ClickBtnKr0(Object sender, EventArgs e)
+        {
+            snf.CheckPressShowBtnKr0();
+            
         }
         public void _view_ClickChBNx1(Object sender, EventArgs e)
         {
@@ -93,10 +105,10 @@ namespace MPUGyro
             {
                 _view.Grid2.ClearSelection();
             }
-           /* if (_view.ChBNx1.Checked == true && _view.ChBNx2.Checked == true || _view.ChBNx1.Checked == true && _view.ChBNx3.Checked == true || _view.ChBNx2.Checked == true && _view.ChBNx3.Checked == true)
-            {
-                MessageBox.Show("Нельзя выбирать несколько данных по одной оси!");
-            }*/
+            /* if (_view.ChBNx1.Checked == true && _view.ChBNx2.Checked == true || _view.ChBNx1.Checked == true && _view.ChBNx3.Checked == true || _view.ChBNx2.Checked == true && _view.ChBNx3.Checked == true)
+             {
+                 MessageBox.Show("Нельзя выбирать несколько данных по одной оси!");
+             }*/
         }
     }
 }

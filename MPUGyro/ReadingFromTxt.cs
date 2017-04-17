@@ -1,43 +1,104 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using MPUGyro.Models;
 
 namespace MPUGyro
 {
     class ReadingFromTxt
     {
-        private readonly IMpuGyro _view;
-
-        public ReadingFromTxt(IMpuGyro view)
+        public KrenModel _view_ReadTxt()
         {
-            _view = view;
-            _view.ClickChoose += _view_ReadTxt;
-        }
-        public void _view_ReadTxt(Object sender, EventArgs e)
-        {
-            int[] arr;
-            FileStream fs = new FileStream(@"Files/ortog.txt", FileMode.Open, FileAccess.Read);
-            if (fs != null)
+            List<double> arr_time = null;
+            using (FileStream fs = new FileStream(@"Files/ortog_time.txt", FileMode.Open, FileAccess.Read))
             {
-
-                StreamReader sr = new StreamReader(fs);
-
-                string b = sr.ReadLine();
-                if (b != null)
+                if (fs != null)
                 {
-                    string[] buf = b.Split(' ');
-                    arr = new int[buf.Length];
-                    for (int i = 0; i < buf.Length; i++)
-                        arr[i] = Convert.ToInt32(buf[i]);
+                    using (StreamReader sr = new StreamReader(fs))
+                    {
+                        string b = sr.ReadToEnd();
+                        if (b != null)
+                        {
+                            string[] buf = b.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+                            arr_time = new List<double>(buf.Length);
+                            for (int i = 0; i < buf.Length; i++)
+                                arr_time.Add(Convert.ToDouble(buf[i]));
+                        }
+                        else MessageBox.Show("Этот файл пустой!!!");
+                    }
                 }
-                else MessageBox.Show("Этот файл пустой!!!");
-                sr.Close();
-                fs.Close();
             }
+
+
+            List<double> arr_kren_x = null;
+            using (FileStream fs = new FileStream(@"Files/ortog_kren_x.txt", FileMode.Open, FileAccess.Read))
+            {
+                if (fs != null)
+                {
+                    using (StreamReader sr = new StreamReader(fs))
+                    {
+                        string b = sr.ReadToEnd();
+                        if (b != null)
+                        {
+                            string[] buf = b.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+                            arr_kren_x = new List<double>(buf.Length);
+                            for (int i = 0; i < buf.Length; i++)
+                                arr_kren_x.Add(Convert.ToDouble(buf[i]));
+                        }
+                        else MessageBox.Show("Этот файл пустой!!!");
+                    }
+                }
+            }
+
+            List<double> arr_kren_y = null;
+            using (FileStream fs = new FileStream(@"Files/ortog_kren_y.txt", FileMode.Open, FileAccess.Read))
+            {
+                if (fs != null)
+                {
+                    using (StreamReader sr = new StreamReader(fs))
+                    {
+                        string b = sr.ReadToEnd();
+                        if (b != null)
+                        {
+                            string[] buf = b.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+                            arr_kren_y = new List<double>(buf.Length);
+                            for (int i = 0; i < buf.Length; i++)
+                                arr_kren_y.Add(Convert.ToDouble(buf[i]));
+                        }
+                        else MessageBox.Show("Этот файл пустой!!!");
+                    }
+                }
+            }
+
+            List<double> arr_kren_z = null;
+            using (FileStream fs = new FileStream(@"Files/ortog_kren_y.txt", FileMode.Open, FileAccess.Read))
+            {
+                if (fs != null)
+                {
+                    using (StreamReader sr = new StreamReader(fs))
+                    {
+                        string b = sr.ReadToEnd();
+                        if (b != null)
+                        {
+                            string[] buf = b.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+                            arr_kren_z = new List<double>(buf.Length);
+                            for (int i = 0; i < buf.Length; i++)
+                                arr_kren_z.Add(Convert.ToDouble(buf[i]));
+                        }
+                        else MessageBox.Show("Этот файл пустой!!!");
+                    }
+                }
+            }
+            return new KrenModel
+            {
+                Times = arr_time,
+                KrenX = arr_kren_x,
+                KrenY = arr_kren_y,
+                KrenZ = arr_kren_z
+            };
         }
+
     }
 }
+
