@@ -26,6 +26,8 @@ namespace MPUGyro
         CheckBox ChBNy3 { get; set; }
         CheckBox ChBNz3 { get; set; }
         Chart Chart0_Kren { get; set; }
+        Chart Chart0_Kurs { get; set; }
+        Chart Chart0_Tangazh { get; set; }
         Button Btn_Kr0 { get; set; }
         event EventHandler ClickChoose;
         event EventHandler ClickChBNx1;
@@ -104,6 +106,16 @@ namespace MPUGyro
             get { return chart0_kren; }
             set { chart0_kren = value; }
         }
+        public Chart Chart0_Kurs
+        {
+            get { return chart0_kurs; }
+            set { chart0_kurs = value; }
+        }
+        public Chart Chart0_Tangazh
+        {
+            get { return chart0_tangazh; }
+            set { chart0_tangazh = value; }
+        }
         public Button Btn_Kr0
         {
             get { return btn_kr0; }
@@ -170,9 +182,9 @@ namespace MPUGyro
             ClickChBNz3?.Invoke(this, EventArgs.Empty);
         }
         public void Click_btn_kr0(Object sender, EventArgs e)
-         {
+        {
             ClickBtnKr0?.Invoke(this, EventArgs.Empty);
-         }
+        }
         #endregion
 
         #region Реализация интерфейса ITestForm

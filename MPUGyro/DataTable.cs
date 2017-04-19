@@ -56,13 +56,7 @@ namespace MPUGyro
             _view.Grid.Columns[1].Width = 50;
             _view.Grid.Columns[2].Width = 50;
             _view.Grid.Columns[3].Width = 50;
-            _view.Grid.Columns[4].Width = 50;
-            _view.Grid.Columns[5].Width = 50;
-            _view.Grid.Columns[6].Width = 50;
-            _view.Grid.Columns[7].Width = 50;
-            _view.Grid.Columns[8].Width = 50;
-            _view.Grid.Columns[9].Width = 50;
-
+            
             var krenModel = rft._view_ReadTxt();
             var graphics = new Graphics(_view);
             graphics.DrowGraphics(krenModel);            

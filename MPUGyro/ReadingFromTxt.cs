@@ -8,7 +8,7 @@ namespace MPUGyro
 {
     class ReadingFromTxt
     {
-        public KrenModel _view_ReadTxt()
+        public OrtogSensor _view_ReadTxt()
         {
             List<double> arr_time = null;
             using (FileStream fs = new FileStream(@"Files/ortog_time.txt", FileMode.Open, FileAccess.Read))
@@ -31,8 +31,8 @@ namespace MPUGyro
             }
 
 
-            List<double> arr_kren_x = null;
-            using (FileStream fs = new FileStream(@"Files/ortog_kren_x.txt", FileMode.Open, FileAccess.Read))
+            List<double> arr_kren = null;
+            using (FileStream fs = new FileStream(@"Files/ortog_kren.txt", FileMode.Open, FileAccess.Read))
             {
                 if (fs != null)
                 {
@@ -42,17 +42,17 @@ namespace MPUGyro
                         if (b != null)
                         {
                             string[] buf = b.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
-                            arr_kren_x = new List<double>(buf.Length);
+                            arr_kren = new List<double>(buf.Length);
                             for (int i = 0; i < buf.Length; i++)
-                                arr_kren_x.Add(Convert.ToDouble(buf[i]));
+                                arr_kren.Add(Convert.ToDouble(buf[i]));
                         }
                         else MessageBox.Show("Этот файл пустой!!!");
                     }
                 }
             }
 
-            List<double> arr_kren_y = null;
-            using (FileStream fs = new FileStream(@"Files/ortog_kren_y.txt", FileMode.Open, FileAccess.Read))
+            List<double> arr_kurs = null;
+            using (FileStream fs = new FileStream(@"Files/ortog_kurs.txt", FileMode.Open, FileAccess.Read))
             {
                 if (fs != null)
                 {
@@ -62,17 +62,17 @@ namespace MPUGyro
                         if (b != null)
                         {
                             string[] buf = b.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
-                            arr_kren_y = new List<double>(buf.Length);
+                            arr_kurs = new List<double>(buf.Length);
                             for (int i = 0; i < buf.Length; i++)
-                                arr_kren_y.Add(Convert.ToDouble(buf[i]));
+                                arr_kurs.Add(Convert.ToDouble(buf[i]));
                         }
                         else MessageBox.Show("Этот файл пустой!!!");
                     }
                 }
             }
 
-            List<double> arr_kren_z = null;
-            using (FileStream fs = new FileStream(@"Files/ortog_kren_y.txt", FileMode.Open, FileAccess.Read))
+            List<double> arr_tangazh = null;
+            using (FileStream fs = new FileStream(@"Files/ortog_tangazh.txt", FileMode.Open, FileAccess.Read))
             {
                 if (fs != null)
                 {
@@ -82,20 +82,20 @@ namespace MPUGyro
                         if (b != null)
                         {
                             string[] buf = b.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
-                            arr_kren_z = new List<double>(buf.Length);
+                            arr_tangazh = new List<double>(buf.Length);
                             for (int i = 0; i < buf.Length; i++)
-                                arr_kren_z.Add(Convert.ToDouble(buf[i]));
+                                arr_tangazh.Add(Convert.ToDouble(buf[i]));
                         }
                         else MessageBox.Show("Этот файл пустой!!!");
                     }
                 }
             }
-            return new KrenModel
+            return new OrtogSensor
             {
                 Times = arr_time,
-                KrenX = arr_kren_x,
-                KrenY = arr_kren_y,
-                KrenZ = arr_kren_z
+                Kren0 = arr_kren,
+                Kurs0 = arr_kurs,
+                Tangazh0 = arr_tangazh
             };
         }
 

@@ -31,57 +31,42 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.newChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.newChart)).BeginInit();
+            this.chart_bigkren0 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_bigkren0)).BeginInit();
             this.SuspendLayout();
             // 
-            // newChart
+            // chart_bigkren0
             // 
-            this.newChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             chartArea1.Name = "ChartArea1";
-            this.newChart.ChartAreas.Add(chartArea1);
+            this.chart_bigkren0.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.newChart.Legends.Add(legend1);
-            this.newChart.Location = new System.Drawing.Point(12, 12);
-            this.newChart.Name = "newChart";
+            this.chart_bigkren0.Legends.Add(legend1);
+            this.chart_bigkren0.Location = new System.Drawing.Point(12, 12);
+            this.chart_bigkren0.Name = "chart_bigkren0";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "Series2";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Legend = "Legend1";
-            series3.Name = "Series3";
-            this.newChart.Series.Add(series1);
-            this.newChart.Series.Add(series2);
-            this.newChart.Series.Add(series3);
-            this.newChart.Size = new System.Drawing.Size(520, 329);
-            this.newChart.TabIndex = 0;
-            this.newChart.Text = "chart1";
+            series1.Name = "γ0(t)";
+            this.chart_bigkren0.Series.Add(series1);
+            this.chart_bigkren0.Size = new System.Drawing.Size(520, 329);
+            this.chart_bigkren0.TabIndex = 0;
+            this.chart_bigkren0.Text = "chart1";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 353);
-            this.Controls.Add(this.newChart);
+            this.Controls.Add(this.chart_bigkren0);
             this.Name = "Form2";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.newChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_bigkren0)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart newChart;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart_bigkren0;
     }
 }

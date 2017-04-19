@@ -142,16 +142,19 @@
   <data name="nz1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Files\nz1.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-16</value>
   </data>
+  <data name="ortog_kren" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Files\ortog_kren.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="ortog_tangazh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Files\ortog_tangazh.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
+  <data name="ortog_kurs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Files\ortog_kurs.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  </data>
   <data name="ortog_time" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Files\ortog_time.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
-  <data name="ortog_kren_x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Files\ortog_kren_x.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
-  </data>
-  <data name="ortog_kren_y" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Files\ortog_kren_y.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
-  </data>
-  <data name="ortog_kren_z" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Files\ortog_kren_z.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+  <data name="ortog_riskanie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Files\ortog_riskanie.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
   </data>
 </root>
