@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 using System.Windows.Forms.DataVisualization.Charting;
 
 namespace MPUGyro
@@ -29,6 +21,7 @@ namespace MPUGyro
         Chart Chart0_Kurs { get; set; }
         Chart Chart0_Tangazh { get; set; }
         Button Btn_Kr0 { get; set; }
+        
         event EventHandler ClickChoose;
         event EventHandler ClickChBNx1;
         event EventHandler ClickChBNy1;

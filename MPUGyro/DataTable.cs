@@ -74,7 +74,7 @@ namespace MPUGyro
                 _view.ChBNx3.Checked = false;
                 DataSet ds = new DataSet();
                 ds.Tables.Add("Temp");
-                string path = @"Files/nx1.txt";
+                string path = @"Files/ortog.txt";
                 StreamReader sr = new StreamReader(path);
                 string firstLine = sr.ReadLine();
                 string[] arraNameColumn = System.Text.RegularExpressions.Regex.Split(firstLine, " ");

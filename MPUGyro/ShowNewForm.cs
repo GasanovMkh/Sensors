@@ -1,24 +1,18 @@
-﻿using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
+﻿using System;
 using MPUGyro.Models;
+using System.Windows.Forms.DataVisualization.Charting;
+
 
 namespace MPUGyro
 {
-    class ShowNewForm//: Graphics
+    class ShowNewForm
     {
-        //public ShowNewForm(IMpuGyro view) : base(view)
-        //{
-
-        //}
 
         public void CheckPressShowBtnKr0()
         {
             Form2 f2 = new Form2();
             f2.Show();
         }
-        //public override void DrowGraphics(KrenModel model)
-        //{
-        //    base.DrowGraphics(model);
-        //}
+
     }
 }
